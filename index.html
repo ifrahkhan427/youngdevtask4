@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav>
+      <h1 class="logo">MyPortfolio</h1>
+      <ul class="nav-links">
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Hello, I'm <span class="highlight">A Developer</span></h2>
+    <p>Passionate about building clean and user-friendly web experiences.</p>
+    <a href="#projects" class="btn">View My Work</a>
+  </section>
+
+  <!-- About Me -->
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <div class="about-container">
+      <div class="avatar">
+        <!-- Avatar illustration -->
+        <img src="https://avatars.githubusercontent.com/u/9919?s=280&v=4" alt="Avatar">
+      </div>
+      <div class="about-text">
+        <p>
+          Hi! I'm a self-taught web developer who enjoys creating modern, 
+          responsive websites. I specialize in HTML, CSS, and JavaScript, 
+          and I’m always learning new frameworks to improve my craft.
+        </p>
+        <p><strong>Skills:</strong> HTML, CSS, JavaScript, React, Git</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>A fully responsive portfolio site to showcase my skills.</p>
+      </div>
+      <div class="project-card">
+        <h3>Image Slider</h3>
+        <p>A custom JavaScript image slider with navigation controls.</p>
+      </div>
+      <div class="project-card">
+        <h3>Form Validation</h3>
+        <p>A contact form with live validation built using JavaScript.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+    <p id="formMessage"></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 My Portfolio | Built with ❤️</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
